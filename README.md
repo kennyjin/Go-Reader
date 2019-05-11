@@ -43,4 +43,8 @@ Maybe a txt file will suffice.
 
 We can further generate a new SGF file containing information about **winning rates**, **bad moves** and **LeelaZero recommended moves** for actual moves that are not matched with LeelaZero. Winning rate, bad moves could be put into the **comment** of SGF, while LeelaZero recommended moves could be added as **new branches**.
 
+## Next Steps
 
+- [ ] Take an SGF file to generate winning rate for each move, put into a file.
+- [ ] Implement data analysis mechanisms, put new stats into a file.
+- [ ] Transform **screenshots** of the Go board into SGF files.
