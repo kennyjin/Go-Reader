@@ -62,3 +62,9 @@ Branches: use () to indicate them.
 Example:
 
 (;W[cn];B[jp])(;W[nq](;B[fc];W[nc])(;B[cn];W[fc]))
+
+Comments: use C[] after moves being played.
+
+Example:
+
+;W[qp]C[对于白4，我曾准备过图九的下法。]
