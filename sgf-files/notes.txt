@@ -1,0 +1,64 @@
+AB & AW: place stones for either black or white. (Before the game starts)
+Example:
+AW[dd][dp]AB[pp][fq]AW[nq][nc]AB[pd][fc]
+
+B & W: play moves for either black or white
+Example:
+;B[pd];W[dp];B[pp];W[dd];B[fq];W[nq];B[fc];W[nc]
+
+Coordinate Transformation: transform the coordinates in an application into sgf coordinates
+Example:
+
+Application Coordinates --> SGF Coordinates
+Black plays Q16 --> ;B[pd]
+White plays D4 --> ;W[dp]
+
+We call Q, D and p, d as the x-coordinates, 16, 4 and d, p as the y coordinates.
+
+What is worth noting is that the coordinates in most Go board application (e.g Sabaki) does not have "I" as the x coordinate, but sgf does.
+
+X Coordinates transformation:
+
+App --> SGF
+
+A --> a
+
+B --> b
+
+C --> c
+
+...
+
+H --> h
+
+(No "I" as x coordinates in application)
+
+J --> i
+
+K --> j
+
+L --> k
+
+...
+
+T --> s
+
+Y Coordinates transformation:
+
+App --> SGF
+
+19 --> a
+
+18 --> b
+
+17 --> c
+
+...
+
+1 --> s
+
+Branches: use () to indicate them.
+
+Example:
+
+(;W[cn];B[jp])(;W[nq](;B[fc];W[nc])(;B[cn];W[fc]))
