@@ -68,3 +68,14 @@ Comments: use C[] after moves being played.
 Example:
 
 ;W[qp]C[对于白4，我曾准备过图九的下法。]
+
+Labels: use LB[] to indicate labels on the board.
+
+Example:
+
+LB[bq:11]
+
+Put "11" at coordinate bq.
+
+
+

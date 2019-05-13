@@ -1,0 +1,252 @@
+Using OpenCL batch size of 2
+Using 4 thread(s).
+RNG seed: 10872099138802373273
+BLAS Core: Haswell
+Detecting residual layers...v1...256 channels...40 blocks.
+Initializing OpenCL (autodetecting precision).
+Detected 2 OpenCL platforms.
+Platform version: OpenCL 1.2 CUDA 9.1.84
+Platform profile: FULL_PROFILE
+Platform name:    NVIDIA CUDA
+Platform vendor:  NVIDIA Corporation
+Device ID:     0
+Device name:   GeForce GTX 1070
+Device type:   GPU
+Device vendor: NVIDIA Corporation
+Device driver: 391.25
+Device speed:  1695 MHz
+Device cores:  16 CU
+Device score:  1112
+Platform version: OpenCL 2.1 
+Platform profile: FULL_PROFILE
+Platform name:    Intel(R) OpenCL
+Platform vendor:  Intel(R) Corporation
+Device ID:     1
+Device name:   Intel(R) HD Graphics 630
+Device type:   GPU
+Device vendor: Intel(R) Corporation
+Device driver: 22.20.16.4836
+Device speed:  1100 MHz
+Device cores:  24 CU
+Device score:  621
+Device ID:     2
+Device name:   Intel(R) Core(TM) i7-7820HK CPU @ 2.90GHz
+Device type:   CPU
+Device vendor: Intel(R) Corporation
+Device driver: 7.5.0.2
+Device speed:  2900 MHz
+Device cores:  8 CU
+Device score:  521
+Selected platform: NVIDIA CUDA
+Selected device: GeForce GTX 1070
+with OpenCL 1.2 capability.
+Half precision compute support: No.
+Tensor Core support: No.
+Detected 2 OpenCL platforms.
+Platform version: OpenCL 1.2 CUDA 9.1.84
+Platform profile: FULL_PROFILE
+Platform name:    NVIDIA CUDA
+Platform vendor:  NVIDIA Corporation
+Device ID:     0
+Device name:   GeForce GTX 1070
+Device type:   GPU
+Device vendor: NVIDIA Corporation
+Device driver: 391.25
+Device speed:  1695 MHz
+Device cores:  16 CU
+Device score:  1112
+Platform version: OpenCL 2.1 
+Platform profile: FULL_PROFILE
+Platform name:    Intel(R) OpenCL
+Platform vendor:  Intel(R) Corporation
+Device ID:     1
+Device name:   Intel(R) HD Graphics 630
+Device type:   GPU
+Device vendor: Intel(R) Corporation
+Device driver: 22.20.16.4836
+Device speed:  1100 MHz
+Device cores:  24 CU
+Device score:  621
+Device ID:     2
+Device name:   Intel(R) Core(TM) i7-7820HK CPU @ 2.90GHz
+Device type:   CPU
+Device vendor: Intel(R) Corporation
+Device driver: 7.5.0.2
+Device speed:  2900 MHz
+Device cores:  8 CU
+Device score:  521
+Selected platform: NVIDIA CUDA
+Selected device: GeForce GTX 1070
+with OpenCL 1.2 capability.
+Half precision compute support: No.
+Tensor Core support: No.
+Loaded existing SGEMM tuning.
+Wavefront/Warp size: 32
+Max workgroup size: 1024
+Max workgroup dimensions: 1024 1024 64 
+Loaded existing SGEMM tuning.
+Wavefront/Warp size: 32
+Max workgroup size: 1024
+Max workgroup dimensions: 1024 1024 64 
+Using OpenCL half precision (at least 5% faster than single).
+Setting max tree size to 3736 MiB and cache size to 415 MiB.
+=
+Thinking at most 36.0 seconds...
+NN eval=0.428772
+
+  D4 ->     154 (V: 43.45%) (LCB: 43.28%) (N: 16.28%) PV: D4 Q16 D16 Q4 O17 F17 O3 F3 R14 Q14 Q13 P14
+ D16 ->     163 (V: 43.44%) (LCB: 43.27%) (N: 16.49%) PV: D16 Q4 D4 Q16 O3 F3 O17 F17 R14 Q14 Q13 P14
+ Q16 ->     156 (V: 43.42%) (LCB: 43.24%) (N: 16.68%) PV: Q16 D4 Q4 D16 F3 O3 F17 O17 C14 D14 D13
+  Q4 ->     158 (V: 43.42%) (LCB: 43.24%) (N: 16.07%) PV: Q4 D16 D4 Q16 C14 C6 R14 R6 O17 O16 N16 O15
+ D17 ->      22 (V: 43.04%) (LCB: 42.21%) (N:  3.15%) PV: D17 D4 Q16 Q4 D14 R14 R6 O17 O16 N16 O15 Q17
+  D3 ->      23 (V: 43.01%) (LCB: 42.18%) (N:  3.21%) PV: D3 D16 Q4 Q16 D6 R6 R14 O3 O4 N4
+ R16 ->      22 (V: 43.01%) (LCB: 42.17%) (N:  3.22%) PV: R16 D16 Q4 D4 O16 O3 F3 R6 Q6 Q7 P6 R4
+ C16 ->      22 (V: 43.05%) (LCB: 42.15%) (N:  3.14%) PV: C16 Q16 D4 Q4 F16 F3 O3 C6 D6 D7 E6 C4
+ Q17 ->      22 (V: 43.01%) (LCB: 42.14%) (N:  3.24%) PV: Q17 Q4 D16 D4 Q14 C14 C6 F17 F16 G16 F15 D17
+  R4 ->      21 (V: 43.01%) (LCB: 42.13%) (N:  3.11%) PV: R4 D4 Q16 D16 O4 O17 F17 R14 Q14 Q13 P14
+  C4 ->      21 (V: 42.99%) (LCB: 42.07%) (N:  3.13%) PV: C4 Q4 D16 Q16 F4 F17 O17 C14 D14 D13 E14
+  Q3 ->      21 (V: 42.97%) (LCB: 42.06%) (N:  3.11%) PV: Q3 Q16 D4 D16 Q6 C6 C14 F3 F4 G4 F5
+8.6 average depth, 17 max depth
+667 non leaf nodes, 1.21 average children
+806 visits, 284786 nodes, 805 playouts, 719 n/s
+
+play D4
+
+=
+Thinking at most 36.3 seconds...
+NN eval=0.564404
+
+ Q16 ->     942 (V: 56.61%) (LCB: 56.53%) (N: 89.45%) PV: Q16 D16 Q4 O3 F3 O17 F17 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3
+ D16 ->       9 (V: 55.59%) (LCB: 53.13%) (N:  1.79%) PV: D16 Q16 Q4 R3 Q3 R4
+  Q4 ->       8 (V: 55.42%) (LCB: 52.71%) (N:  1.74%) PV: Q4 Q16 D16 R3 Q3 R4 Q5
+12.6 average depth, 31 max depth
+823 non leaf nodes, 1.17 average children
+960 visits, 334452 nodes, 806 playouts, 625 n/s
+
+play Q16
+
+=
+Thinking at most 36.7 seconds...
+NN eval=0.431695
+
+ D16 ->     591 (V: 43.58%) (LCB: 43.46%) (N: 27.39%) PV: D16 Q4 O17 F17 O3 F3 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5
+  Q4 ->     598 (V: 43.58%) (LCB: 43.46%) (N: 27.50%) PV: Q4 D16 R14 R6 C14 C6 O17 O16 N16 O15 Q17 N17 P17 M16 R16 N15 C17 C16 D17 E16 F18 F3 D6 D7 E6
+ R17 ->     353 (V: 43.12%) (LCB: 42.96%) (N: 21.09%) PV: R17 R16 Q17 P16 P17 N17 D16 Q4 O3 F3 O17 O16 N18 M17 M18 Q10 R3 Q3 R4 Q5 S6 C6 F4 G4
+ D17 ->     109 (V: 43.22%) (LCB: 42.96%) (N:  6.99%) PV: D17 Q4 D14 F3 H3 C6 F4 O17 O3 O4 N4 O5 Q3 R3 P2
+  R4 ->     104 (V: 43.20%) (LCB: 42.90%) (N:  6.74%) PV: R4 D16 O4 C6 C8 F3 F4 G4 F5 C3 E3 G3 C4 E2 D3 D2 C2 L3 C10 G5 F6 O17 C14 F17 R10
+14.3 average depth, 40 max depth
+1532 non leaf nodes, 1.15 average children
+1756 visits, 606984 nodes, 814 playouts, 673 n/s
+
+play D16
+
+=
+Thinking at most 37.1 seconds...
+NN eval=0.564940
+
+  Q4 ->    1196 (V: 56.39%) (LCB: 56.29%) (N: 81.76%) PV: Q4 O17 F17 O3 F3 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5 D3 C3 E3 C4 C8 J4 G5 D7 D6 F7
+  Q3 ->     199 (V: 56.48%) (LCB: 56.07%) (N: 12.59%) PV: Q3 R5 R4 Q5 O3 O17 R14 F17 R9 N5 P8 N8 O10 O15 M9 F3 L7 L5 C10 Q18 C6 Q13 Q14 O13
+14.7 average depth, 44 max depth
+1207 non leaf nodes, 1.16 average children
+1396 visits, 480564 nodes, 805 playouts, 393 n/s
+
+play Q4
+
+=
+Thinking at most 37.5 seconds...
+NN eval=0.434040
+
+ O17 ->     660 (V: 43.72%) (LCB: 43.58%) (N: 25.91%) PV: O17 F17 O3 F3 R14 O16 N16 O15 Q17 R17 P17 R16 R12 O13 M17
+  O3 ->     665 (V: 43.73%) (LCB: 43.57%) (N: 27.48%) PV: O3 F3 O17 F17 R14 O16 N16 O15 Q17 R17 P17 R16 R12 O13 M17
+  R3 ->     192 (V: 43.44%) (LCB: 43.14%) (N: 10.60%) PV: R3 Q3 R4 Q5 R6 R5 S5 R2 R14 R10 O16 O15 N15 O14
+ R17 ->     184 (V: 43.42%) (LCB: 43.11%) (N: 10.27%) PV: R17 Q17 R16 Q15 R14 R15 S15 R18 R6 R10 O4 O5 N5 O6
+  R6 ->     139 (V: 43.31%) (LCB: 43.04%) (N:  8.40%) PV: R6 R10 O4 O5 N5 O6 N6 O7 O3 R3 Q9 Q7 R8
+ R14 ->     139 (V: 43.28%) (LCB: 43.00%) (N:  8.45%) PV: R14 R10 O16 O15 N15 O14 N14 O13 O17 R17 Q11 Q13 R12 N13
+  C6 ->      11 (V: 42.93%) (LCB: 41.93%) (N:  0.85%) PV: C6 F17 C14 D17 C17 C18 E17 D18 F16 E18 E16
+ C14 ->      11 (V: 42.93%) (LCB: 41.93%) (N:  0.83%) PV: C14 F3 C6 D3 C3 C2 E3 D2 F4 E2 E4
+13.5 average depth, 42 max depth
+1735 non leaf nodes, 1.15 average children
+2002 visits, 689446 nodes, 806 playouts, 440 n/s
+
+play O17
+
+=
+Thinking at most 37.8 seconds...
+NN eval=0.561780
+Playouts: 688, Win: 56.28%, PV: F17 O3 F3 R6 O4 N4 O5 Q3 R3 P3 R4 R9 L4 N5 Q8 R8 Q6 N7 C6 H3
+
+ F17 ->    1259 (V: 56.27%) (LCB: 56.14%) (N: 76.76%) PV: F17 O3 F3 R14 O16 N16 O15 Q17 R17 P17 R16 R12 O13 M17 R10 Q10 Q9
+  F3 ->     121 (V: 56.31%) (LCB: 56.10%) (N:  5.88%) PV: F3 O3 F17 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5
+ R14 ->      29 (V: 56.50%) (LCB: 56.01%) (N:  1.25%) PV: R14 Q17 R17 R18 P17 Q18 P16 P18 C3 D3 C4
+ M17 ->      28 (V: 55.76%) (LCB: 54.78%) (N:  3.13%) PV: M17 R14 O16 R3 Q3 R4 R6 R5 Q5
+  C3 ->      27 (V: 56.48%) (LCB: 55.92%) (N:  1.18%) PV: C3 D3 C4 C6 C5 D5 B6 C2 B2 B5 D2 B3 C1 B4 C2
+15.9 average depth, 45 max depth
+1274 non leaf nodes, 1.15 average children
+1465 visits, 499596 nodes, 805 playouts, 274 n/s
+
+play F17
+
+=
+Thinking at most 38.2 seconds...
+NN eval=0.438487
+Playouts: 631, Win: 43.76%, PV: O3 F3 R6 Q6 Q7 P6 R4 R7 R5 Q8 Q3 P7 R17 Q17 R16 Q15 S14 C14 F16 G16 F15 D17 C17 E17 C16 C12 J16 G15 D13 D14 F13 H17 B15 C6 J17 H14 M16 E13 D6 D7 E6 C4 C7
+
+  O3 ->    1107 (V: 43.82%) (LCB: 43.66%) (N: 47.53%) PV: O3 F3 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 D6 D7 E6 C4 C7 C5 D8 D3 E17
+  R6 ->     855 (V: 43.79%) (LCB: 43.57%) (N: 35.85%) PV: R6 F3 Q14 C6 D6 D7 E6 C4 C7 C5 D8 D3 E7 C17 C16 D17 E16 G18 F16
+ H17 ->      49 (V: 43.34%) (LCB: 42.71%) (N:  3.51%) PV: H17 F3 O3 F15 D14 K17 R6 O4 N4 O5 Q3
+ R14 ->      29 (V: 43.38%) (LCB: 42.92%) (N:  2.08%) PV: R14 O16 N16 O15 Q17 R17 P17 R16 R11 L16 N15 Q12 R12 Q14 N13 C14 H17 M18 M17 N18
+  R3 ->      24 (V: 43.11%) (LCB: 42.50%) (N:  1.89%) PV: R3 Q3 R4 Q5 S6 C6 R7 F3 D6 D7 E6 C4 C7 C5
+17.8 average depth, 47 max depth
+1804 non leaf nodes, 1.14 average children
+2065 visits, 698121 nodes, 806 playouts, 248 n/s
+
+play O3
+
+=
+Thinking at most 38.6 seconds...
+NN eval=0.558045
+Playouts: 634, Win: 56.23%, PV: F3 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5 D3 C3 E3 C4 C8 J4 G5 D7 D6 F7 H3 B5 C14 J3 H6 M4 E7 D14 D13 E14 C15 C16 F6
+
+  F3 ->    1567 (V: 56.31%) (LCB: 56.14%) (N: 64.23%) PV: F3 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5 D3 C3 E3 C4 C8 F7 H3 C10 D10 D11 D9 B5 C11 C12 B11 D12 B10 E18 L4 Q2
+  M3 ->     159 (V: 55.60%) (LCB: 55.06%) (N: 12.94%) PV: M3 R14 O16 N16 O15 Q17 R17 P17 R16 R12 L16 N15 Q13 Q14 O13 M17 S15 R6 R9 P11 Q6 Q7 R7 R8 S7 P7 Q8
+ C14 ->      70 (V: 56.12%) (LCB: 55.42%) (N:  2.89%) PV: C14 F16 G16 F15 D17 C17 E17 C16 C12 J16 G15 D13 D14 F13 H17 B15 C9 J17 H14 C13 M16 O15 K15 M18 Q18 H18
+ R14 ->      69 (V: 56.60%) (LCB: 56.10%) (N:  1.74%) PV: R14 R6 Q6 Q7 P6 S5 R3 L3 N6 R10 P17 O16 K17 Q15 R15
+  R6 ->      33 (V: 56.30%) (LCB: 55.27%) (N:  1.11%) PV: R6 Q3 R3 R2 P3 Q2 P4 P2 C14 F16 G16 F15 D17 C17 E17 C16 D13 F13 H17
+  P3 ->      13 (V: 55.92%) (LCB: 54.57%) (N:  0.98%) PV: P3 O4 Q6 K4 M2 R14 O16 N16 O15 Q17
+20.0 average depth, 52 max depth
+1660 non leaf nodes, 1.15 average children
+1912 visits, 640312 nodes, 805 playouts, 253 n/s
+
+play F3
+
+=
+Thinking at most 39.0 seconds...
+NN eval=0.436570
+Playouts: 599, Win: 43.70%, PV: R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 F4 G4 F5 D3 C3 E3 C4 C8 F7 H3 C10 D10 D11 D9 B5 C11 C12 B11 D12 B10 E18 L4 Q2 P2 R2
+
+ R14 ->     777 (V: 43.92%) (LCB: 43.62%) (N: 26.00%) PV: R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 Q2 P2 R2 C6 D6 D7 E6 C4 C7 C5 D8 D3 E17 F16 C14 O2 R6 N3 E7 F13 D13 K16 L4 J4 L6
+  R6 ->     766 (V: 43.94%) (LCB: 43.60%) (N: 24.57%) PV: R6 Q6 Q7 P6 R4 R7 R5 Q8 Q3 P7 R17 Q17 R16 Q15 S14 C14 F16 G16 F15 D17 C17 E17 C16 C12 J16 G15 D13 D14 F13 H17 B15 C6 J17 H14 G14 H15 M16 E13 D6 D7 E6 C5 C4 D8 R13
+ C14 ->     348 (V: 43.38%) (LCB: 43.08%) (N: 16.62%) PV: C14 K16 R6 O4 N4 O5 Q3 R3 P3 R4 R9 L4 N5 Q8 R8 Q6 N7 C6 H3 M2 M3 N2 N3 L3
+  C6 ->     344 (V: 43.33%) (LCB: 43.03%) (N: 16.88%) PV: C6 K4 R14 Q14 Q13 P14 R16 R13 R15 Q12 Q17 P3 O4 Q6 H3 P13 K3 L3 L4 J3 K2
+ H17 ->      69 (V: 43.34%) (LCB: 42.83%) (N:  3.70%) PV: H17 F15 D13 K17 R6 O4 N4 O5 Q3 R3 P3 R4 R9 L4
+  H3 ->      66 (V: 43.34%) (LCB: 42.80%) (N:  3.54%) PV: H3 F5 D7 K3 R14 O16 N16 O15 Q17 R17 P17 R16 R11 L16
+22.6 average depth, 53 max depth
+2037 non leaf nodes, 1.16 average children
+2371 visits, 785572 nodes, 804 playouts, 230 n/s
+
+play R14
+
+=
+Thinking at most 39.4 seconds...
+NN eval=0.557340
+Playouts: 510, Win: 56.15%, PV: O16 N16 O15 Q17 R17 P17 R16 R11 L16 N15 Q12 R12 Q14 N13 C14 H17 E15 H15 K18 M18 H18 K17 J17
+
+ O16 ->     343 (V: 56.33%) (LCB: 55.83%) (N: 15.43%) PV: O16 N16 O15 Q17 R17 P17 R16 R12 O13 M17 R10 Q10 Q9 Q11 S15 R9 R8 S9 Q8 S10 C6 F4 G4 F5 D3 C3 E3 C4 C8 J4 G5 D7
+ Q14 ->    1237 (V: 56.03%) (LCB: 55.76%) (N: 78.51%) PV: Q14 Q13 P14 R16 R13 R15 Q12 Q17 P13 R3 Q3 R4 Q5 S6 C6 D6 D7 E6 C4 C7 C5 D8 D3 E17 F16 C14 B7 E7 B8 Q2 P2 R2 G5 L4 M3 M4 N3 N4 O2 L3
+27.8 average depth, 55 max depth
+1329 non leaf nodes, 1.19 average children
+1581 visits, 514393 nodes, 804 playouts, 203 n/s
+
+play O16
+
+
