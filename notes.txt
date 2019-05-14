@@ -1,0 +1,7 @@
+To generate winrate output file from Leela Zero, change to Leela Zero's directory and use the following example command in cmd:
+
+leelaz.exe -g --noponder -t 4 -w network_226.gz --playouts 100 -r 0 < in.txt >> out.txt 2<&1
+
+-r has to be set to 0, otherwise the engine will resign and cannot analyze the game properly.
+
+2<&1 in cmd means put stderr and strout together in one file.
