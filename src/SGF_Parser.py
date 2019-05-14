@@ -88,12 +88,14 @@ Return the main branch text from some sgf text
 # TODO matches seem inapropriate
 def getMainBranch(sgf_txt):
 	# Look for the first ")"
-	x = re.search(r"\)", sgf_txt)
-	pos = x.span()[0]
+	#x = re.search(r"\[[\s\S]*\]\)", sgf_txt)
+	x = re.search(r"\]\)", sgf_txt)
+	pos = x.span()[1]
 	sgf_txt_new = sgf_txt[0:pos]
 	# Get rid of all the "("
-	sgf_txt_new = re.sub(r"\(", "", sgf_txt_new)
-	sgf_txt_new = "(" + sgf_txt_new + ")"
+	sgf_txt_new = re.sub(r"(\()(;[BW])", r"\2", sgf_txt_new)
+	if sgf_txt_new[0] != "(":
+		sgf_txt_new = "(" + sgf_txt_new
 	return sgf_txt_new
 
 
