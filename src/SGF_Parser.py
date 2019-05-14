@@ -32,6 +32,7 @@ def parseCoordinates(sgf_coor):
 	y_new = 20 - (ord(y_coor) - diff)
 	return x_new + str(y_new)
 
+
 """
 Parse sgf moves into Leela Zero commands
 @param: the move in the File. e.g: ;B[qq] or ;W[qd]
@@ -51,6 +52,7 @@ def parseMove(str_move):
 	+ " " + color + " " + move_pos
 	return cmd_lz
 
+
 """
 Parse main branch of sgf and generate commands
 This is basically put all commands together
@@ -67,6 +69,7 @@ def parseMainBranch(sgf_txt):
 		cmd_all += cmd_lz + "\n"
 	return cmd_all
 
+
 """
 Write Leela Zero commands to a txt file.
 """
@@ -77,6 +80,23 @@ def writeLZcmd(sgf_file, out_file):
 	out_str = parseMainBranch(sgf_txt)
 	f = open(out_file, 'w')
 	f.write(out_str)
+
+
+"""
+Return the main branch text from some sgf text
+"""
+# TODO matches seem inapropriate
+def getMainBranch(sgf_txt):
+	# Look for the first ")"
+	x = re.search(r"\)", sgf_txt)
+	pos = x.span()[0]
+	sgf_txt_new = sgf_txt[0:pos]
+	# Get rid of all the "("
+	sgf_txt_new = re.sub(r"\(", "", sgf_txt_new)
+	sgf_txt_new = "(" + sgf_txt_new + ")"
+	return sgf_txt_new
+
+
 
 
 
