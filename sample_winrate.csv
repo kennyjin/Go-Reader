@@ -1,0 +1,5 @@
+﻿,move_number,winrate_B,winrate_W,color_next,next_move,variation,actual_color_next,actual_next_move
+1,0,43.39,,B,D16,D16 Q4 Q16 D4 C6 C14 R6 R14 O3,B,R4
+2,1,,57.01,W,D16,D16 Q17 D4 P4 R15 O16 Q11 C3 D3,W,Q16
+3,2,43.05,,B,C4,C4 D16 E4 P3 Q6 F4 E3 L4 R17 R16 Q17 O17,B,C3
+4,3,,57.21,W,C16,C16 E17 D17 E16 C14 R14 O17 O4 J17 E13,W,C16
