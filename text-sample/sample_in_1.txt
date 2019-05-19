@@ -1,0 +1,465 @@
+lz-genmove_analyze B
+undo
+play B R4
+lz-genmove_analyze W
+undo
+play W Q16
+lz-genmove_analyze B
+undo
+play B C3
+lz-genmove_analyze W
+undo
+play W C16
+lz-genmove_analyze B
+undo
+play B E17
+lz-genmove_analyze W
+undo
+play W P3
+lz-genmove_analyze B
+undo
+play B Q6
+lz-genmove_analyze W
+undo
+play W D14
+lz-genmove_analyze B
+undo
+play B O17
+lz-genmove_analyze W
+undo
+play W R14
+lz-genmove_analyze B
+undo
+play B Q17
+lz-genmove_analyze W
+undo
+play W R17
+lz-genmove_analyze B
+undo
+play B R18
+lz-genmove_analyze W
+undo
+play W P17
+lz-genmove_analyze B
+undo
+play B Q18
+lz-genmove_analyze W
+undo
+play W P16
+lz-genmove_analyze B
+undo
+play B P18
+lz-genmove_analyze W
+undo
+play W S17
+lz-genmove_analyze B
+undo
+play B O16
+lz-genmove_analyze W
+undo
+play W N18
+lz-genmove_analyze B
+undo
+play B M17
+lz-genmove_analyze W
+undo
+play W M18
+lz-genmove_analyze B
+undo
+play B R16
+lz-genmove_analyze W
+undo
+play W S16
+lz-genmove_analyze B
+undo
+play B K17
+lz-genmove_analyze W
+undo
+play W N17
+lz-genmove_analyze B
+undo
+play B Q15
+lz-genmove_analyze W
+undo
+play W P15
+lz-genmove_analyze B
+undo
+play B M16
+lz-genmove_analyze W
+undo
+play W L4
+lz-genmove_analyze B
+undo
+play B J3
+lz-genmove_analyze W
+undo
+play W F4
+lz-genmove_analyze B
+undo
+play B D6
+lz-genmove_analyze W
+undo
+play W J5
+lz-genmove_analyze B
+undo
+play B C12
+lz-genmove_analyze W
+undo
+play W C8
+lz-genmove_analyze B
+undo
+play B E12
+lz-genmove_analyze W
+undo
+play W C13
+lz-genmove_analyze B
+undo
+play B B13
+lz-genmove_analyze W
+undo
+play W B14
+lz-genmove_analyze B
+undo
+play B F6
+lz-genmove_analyze W
+undo
+play W E7
+lz-genmove_analyze B
+undo
+play B E6
+lz-genmove_analyze W
+undo
+play W E9
+lz-genmove_analyze B
+undo
+play B L3
+lz-genmove_analyze W
+undo
+play W M3
+lz-genmove_analyze B
+undo
+play B M4
+lz-genmove_analyze W
+undo
+play W K3
+lz-genmove_analyze B
+undo
+play B L2
+lz-genmove_analyze W
+undo
+play W K4
+lz-genmove_analyze B
+undo
+play B K2
+lz-genmove_analyze W
+undo
+play W N3
+lz-genmove_analyze B
+undo
+play B J4
+lz-genmove_analyze W
+undo
+play W H5
+lz-genmove_analyze B
+undo
+play B G4
+lz-genmove_analyze W
+undo
+play W D3
+lz-genmove_analyze B
+undo
+play B G5
+lz-genmove_analyze W
+undo
+play W C4
+lz-genmove_analyze B
+undo
+play B M5
+lz-genmove_analyze W
+undo
+play W L6
+lz-genmove_analyze B
+undo
+play B M6
+lz-genmove_analyze W
+undo
+play W L7
+lz-genmove_analyze B
+undo
+play B D4
+lz-genmove_analyze W
+undo
+play W H4
+lz-genmove_analyze B
+undo
+play B H3
+lz-genmove_analyze W
+undo
+play W G3
+lz-genmove_analyze B
+undo
+play B G2
+lz-genmove_analyze W
+undo
+play W F3
+lz-genmove_analyze B
+undo
+play B H6
+lz-genmove_analyze W
+undo
+play W K5
+lz-genmove_analyze B
+undo
+play B F2
+lz-genmove_analyze W
+undo
+play W D5
+lz-genmove_analyze B
+undo
+play B C5
+lz-genmove_analyze W
+undo
+play W E4
+lz-genmove_analyze B
+undo
+play B B4
+lz-genmove_analyze W
+undo
+play W N16
+lz-genmove_analyze B
+undo
+play B O15
+lz-genmove_analyze W
+undo
+play W P14
+lz-genmove_analyze B
+undo
+play B M7
+lz-genmove_analyze W
+undo
+play W M15
+lz-genmove_analyze B
+undo
+play B L8
+lz-genmove_analyze W
+undo
+play W K8
+lz-genmove_analyze B
+undo
+play B G8
+lz-genmove_analyze W
+undo
+play W L9
+lz-genmove_analyze B
+undo
+play B M8
+lz-genmove_analyze W
+undo
+play W K9
+lz-genmove_analyze B
+undo
+play B N10
+lz-genmove_analyze W
+undo
+play W G10
+lz-genmove_analyze B
+undo
+play B Q3
+lz-genmove_analyze W
+undo
+play W Q2
+lz-genmove_analyze B
+undo
+play B R2
+lz-genmove_analyze W
+undo
+play W Q5
+lz-genmove_analyze B
+undo
+play B R5
+lz-genmove_analyze W
+undo
+play W P6
+lz-genmove_analyze B
+undo
+play B P4
+lz-genmove_analyze W
+undo
+play W O4
+lz-genmove_analyze B
+undo
+play B Q7
+lz-genmove_analyze W
+undo
+play W P7
+lz-genmove_analyze B
+undo
+play B O5
+lz-genmove_analyze W
+undo
+play W B5
+lz-genmove_analyze B
+undo
+play B D4
+lz-genmove_analyze W
+undo
+play W P5
+lz-genmove_analyze B
+undo
+play B Q4
+lz-genmove_analyze W
+undo
+play W C4
+lz-genmove_analyze B
+undo
+play B C6
+lz-genmove_analyze W
+undo
+play W O8
+lz-genmove_analyze B
+undo
+play B M9
+lz-genmove_analyze W
+undo
+play W N5
+lz-genmove_analyze B
+undo
+play B Q8
+lz-genmove_analyze W
+undo
+play W O10
+lz-genmove_analyze B
+undo
+play B O11
+lz-genmove_analyze W
+undo
+play W P9
+lz-genmove_analyze B
+undo
+play B O14
+lz-genmove_analyze W
+undo
+play W N11
+lz-genmove_analyze B
+undo
+play B M11
+lz-genmove_analyze W
+undo
+play W N12
+lz-genmove_analyze B
+undo
+play B P13
+lz-genmove_analyze W
+undo
+play W Q14
+lz-genmove_analyze B
+undo
+play B L11
+lz-genmove_analyze W
+undo
+play W J10
+lz-genmove_analyze B
+undo
+play B M13
+lz-genmove_analyze W
+undo
+play W O12
+lz-genmove_analyze B
+undo
+play B P11
+lz-genmove_analyze W
+undo
+play W P12
+lz-genmove_analyze B
+undo
+play B Q10
+lz-genmove_analyze W
+undo
+play W Q12
+lz-genmove_analyze B
+undo
+play B Q9
+lz-genmove_analyze W
+undo
+play W B3
+lz-genmove_analyze B
+undo
+play B D4
+lz-genmove_analyze W
+undo
+play W K13
+lz-genmove_analyze B
+undo
+play B L13
+lz-genmove_analyze W
+undo
+play W C4
+lz-genmove_analyze B
+undo
+play B K6
+lz-genmove_analyze W
+undo
+play W J6
+lz-genmove_analyze B
+undo
+play B D4
+lz-genmove_analyze W
+undo
+play W F5
+lz-genmove_analyze B
+undo
+play B C4
+lz-genmove_analyze W
+undo
+play W G6
+lz-genmove_analyze B
+undo
+play B L15
+lz-genmove_analyze W
+undo
+play W N15
+lz-genmove_analyze B
+undo
+play B K14
+lz-genmove_analyze W
+undo
+play W K18
+lz-genmove_analyze B
+undo
+play B J17
+lz-genmove_analyze W
+undo
+play W J18
+lz-genmove_analyze B
+undo
+play B E2
+lz-genmove_analyze W
+undo
+play W H17
+lz-genmove_analyze B
+undo
+play B C17
+lz-genmove_analyze W
+undo
+play W B17
+lz-genmove_analyze B
+undo
+play B D16
+lz-genmove_analyze W
+undo
+play W C18
+lz-genmove_analyze B
+undo
+play B C15
+lz-genmove_analyze W
+undo
+play W D17
+lz-genmove_analyze B
+undo
+play B C14
+lz-genmove_analyze W
+undo
+play W D13
+lz-genmove_analyze B
+undo
+play B B15

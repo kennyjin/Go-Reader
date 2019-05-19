@@ -1,0 +1,12 @@
+lz-genmove_analyze B
+undo
+play B C4
+lz-genmove_analyze W
+undo
+play W Q16
+lz-genmove_analyze B
+undo
+play B D17
+lz-genmove_analyze W
+undo 
+play W Q4
