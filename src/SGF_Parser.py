@@ -1,6 +1,9 @@
 """
 This module parses SGF files to input commands for Leela Zero
+May need further improvements to deal with different types of SGF
+e.g, it cannot read ';\nB[]'. \n is a new line character
 """
+
 
 import re
 

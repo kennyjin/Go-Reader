@@ -113,10 +113,11 @@ def print_win_rate_from_file(lz_cmd_file, lz_out_file, black=True, show_move_num
         print(outstr)
 
 
-def print_win_rate(lz_cmd_txt, lz_out_txt, black=True, show_move_number=True, write_to_file=False):
+def print_win_rate(lz_cmd_txt, lz_out_txt, black=True, show_move_number=True,
+                   out_file=None, show_on_console=False):
     color_list, pos_list = read_actual_moves(lz_cmd_txt)
     blks = get_text_blocks(lz_out_txt)
-    print(len(blks))
+    # print(len(blks))
     outstr_full = ""
     for i in range(len(blks)):
         if black:
@@ -132,11 +133,12 @@ def print_win_rate(lz_cmd_txt, lz_out_txt, black=True, show_move_number=True, wr
                 outstr = "{0:.2f}".format(100.00 - get_win_rate(blks[i]))
         if show_move_number:
             outstr = str(i) + " " + outstr
-        #print(outstr)
+        # print(outstr)
         outstr_full += outstr + "\n"
-    print(outstr_full)
-    if write_to_file:
-        f = open("winrate.txt", "w")
+    if show_on_console:
+        print(outstr_full)
+    if out_file is not None:
+        f = open(out_file, "w")
         f.write(outstr_full)
 
 
