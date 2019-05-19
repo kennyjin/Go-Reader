@@ -37,7 +37,7 @@ def read_lz_out(lz_out_file):
     return lz_out_txt
 
 
-def print_data(lz_out_file, show_next_move=True, show_win_rate=True, show_variation=False):
+def print_data_from_file(lz_out_file, show_next_move=True, show_win_rate=True, show_variation=False):
     lz_out_txt = read_lz_out(lz_out_file)
     blks = get_text_blocks(lz_out_txt)
     print(len(blks))
@@ -52,7 +52,21 @@ def print_data(lz_out_file, show_next_move=True, show_win_rate=True, show_variat
         print(outstr)
 
 
-def read_actual_moves(lz_cmd_file):
+def print_data(lz_out_txt, show_next_move=True, show_win_rate=True, show_variation=False):
+    blks = get_text_blocks(lz_out_txt)
+    print(len(blks))
+    for i in range(len(blks)):
+        outstr = ""
+        if show_next_move:
+            outstr += get_next_move(blks[i])
+        if show_win_rate:
+            outstr += " " + "{0:.2f}".format(get_win_rate(blks[i]))
+        if show_variation:
+            outstr += " " + get_variation(blks[i])
+        print(outstr)
+
+
+def read_actual_moves_from_file(lz_cmd_file):
     f = open(lz_cmd_file, "r")
     lz_cmd_txt = f.read()
     f.close()
@@ -66,8 +80,19 @@ def read_actual_moves(lz_cmd_file):
     return color_list, pos_list
 
 
-def print_win_rate(lz_cmd_file, lz_out_file, black=True, show_move_number=True):
-    color_list, pos_list = read_actual_moves(lz_cmd_file)
+def read_actual_moves(lz_cmd_txt):
+    move_list = re.findall(r"play [BW] [A-T]\d{1,2}", lz_cmd_txt)
+    color_list = []
+    pos_list = []
+    for i in range(len(move_list)):
+        color_list.append(move_list[i][5])
+        pos_list.append(move_list[i][7:])
+
+    return color_list, pos_list
+
+
+def print_win_rate_from_file(lz_cmd_file, lz_out_file, black=True, show_move_number=True):
+    color_list, pos_list = read_actual_moves_from_file(lz_cmd_file)
     lz_out_txt = read_lz_out(lz_out_file)
     blks = get_text_blocks(lz_out_txt)
     print(len(blks))
@@ -87,6 +112,32 @@ def print_win_rate(lz_cmd_file, lz_out_file, black=True, show_move_number=True):
             outstr = str(i) + " " + outstr
         print(outstr)
 
+
+def print_win_rate(lz_cmd_txt, lz_out_txt, black=True, show_move_number=True, write_to_file=False):
+    color_list, pos_list = read_actual_moves(lz_cmd_txt)
+    blks = get_text_blocks(lz_out_txt)
+    print(len(blks))
+    outstr_full = ""
+    for i in range(len(blks)):
+        if black:
+            if color_list[i] == "B":
+                # Keep 2 decimal places
+                outstr = "{0:.2f}".format(get_win_rate(blks[i]))
+            else:
+                outstr = "{0:.2f}".format(100.00 - get_win_rate(blks[i]))
+        else:
+            if color_list[i] == "W":
+                outstr = "{0:.2f}".format(get_win_rate(blks[i]))
+            else:
+                outstr = "{0:.2f}".format(100.00 - get_win_rate(blks[i]))
+        if show_move_number:
+            outstr = str(i) + " " + outstr
+        #print(outstr)
+        outstr_full += outstr + "\n"
+    print(outstr_full)
+    if write_to_file:
+        f = open("winrate.txt", "w")
+        f.write(outstr_full)
 
 
 

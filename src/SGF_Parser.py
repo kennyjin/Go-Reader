@@ -54,7 +54,7 @@ def parse_move(str_move):
     move_pos = parse_coordinates(re.findall(r";[BW]\[([a-s]{2})?\]", str_move)[0])
     # Leela Zero command
     cmd_lz = "lz-genmove_analyze" + " " + color + "\n" + "undo\n" + "play"\
-    + " " + color + " " + move_pos
+        + " " + color + " " + move_pos
     return cmd_lz
 
 
@@ -91,6 +91,19 @@ def write_lz_cmd(sgf_file, out_file):
     out_str = parse_main_branch(sgf_txt)
     f = open(out_file, 'w')
     f.write(out_str)
+
+
+"""
+Return Leela Zero commands as a string.
+"""
+
+
+def get_lz_cmd(sgf_file):
+    f = open(sgf_file, 'r')
+    sgf_txt = f.read()
+    f.close()
+    out_str = parse_main_branch(sgf_txt)
+    return out_str
 
 
 """
