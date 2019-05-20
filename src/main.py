@@ -4,6 +4,7 @@ import subprocess
 
 """
 Take in an sgf file, output all the required statistics
+TODO Improvement: show analysis progress in real time
 """
 
 
@@ -20,8 +21,11 @@ def analyze_sgf(sgf_file, out_file):
 
     # print(lz_cmd_txt)
 
-    out_parser.print_win_rate(lz_cmd_txt, lz_out_txt, out_file=out_file)
+    # out_parser.print_win_rate(lz_cmd_txt, lz_out_txt, out_file=out_file)
+    out_parser.print_data(lz_cmd_txt, lz_out_txt, out_file)
 
 
-analyze_sgf("../sgf-files/alphago_pairgo.sgf", "winrate.txt")
+# analyze_sgf("../sgf-files/alphago_pairgo.sgf", "winrate.txt")
+analyze_sgf("../sgf-files/alphago_pairgo.sgf", "statistics.csv")
+# analyze_sgf("../sgf-files/test_pass.sgf", "winrate.txt")
 # analyze_sgf("E:/Go-game-record/vs-vincent/2.SGF", "winrate3.txt")
