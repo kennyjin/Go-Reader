@@ -26,6 +26,6 @@ def analyze_sgf(sgf_file, out_file):
 
 
 # analyze_sgf("../sgf-files/alphago_pairgo.sgf", "winrate.txt")
-analyze_sgf("../sgf-files/alphago_pairgo.sgf", "statistics.csv")
+analyze_sgf("../sgf-files/alphago_kejie_3.sgf", "alphago_kejie_3.csv")
 # analyze_sgf("../sgf-files/test_pass.sgf", "winrate.txt")
 # analyze_sgf("E:/Go-game-record/vs-vincent/2.SGF", "winrate3.txt")

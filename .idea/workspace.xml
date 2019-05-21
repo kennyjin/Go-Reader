@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b522bba1-38f2-4087-9928-6b43d36f5d5f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/KennyJin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/KennyJin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_winrate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/sample_winrate.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgf-files/LS vs AG - G1 - English.sgf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgf-files/LS vs AG - G2 - English.sgf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgf-files/LS vs AG - G3 - English.sgf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgf-files/LS vs AG - G4 - English.sgf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sgf-files/LS vs AG - G5 - English.sgf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/out_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/out_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/winrate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/winrate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statistics.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-sample/winratePlot.Rmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-sample/winratePlot.nb.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/out_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
+            <state relative-caret-position="4048">
+              <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
               <folding>
                 <element signature="e#103#112#0" expanded="true" />
               </folding>
@@ -33,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+            <state relative-caret-position="644">
+              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -48,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2192">
+            <state relative-caret-position="138">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
@@ -76,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/src/SGF_parser.py" />
-        <option value="$PROJECT_DIR$/src/main.py" />
         <option value="$PROJECT_DIR$/src/out_parser.py" />
+        <option value="$PROJECT_DIR$/src/main.py" />
       </list>
     </option>
   </component>
@@ -102,6 +99,11 @@
             <path>
               <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
+              <item name="sgf-files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -118,7 +120,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,6 +178,9 @@
       <workItem from="1558280757654" duration="13101000" />
       <workItem from="1558305789017" duration="3181000" />
       <workItem from="1558310004195" duration="5985000" />
+      <workItem from="1558318252532" duration="1022000" />
+      <workItem from="1558319605473" duration="1241000" />
+      <workItem from="1558323813096" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="Update style">
       <created>1558279013768</created>
@@ -195,7 +200,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25253000" />
+    <option name="totallyTimeSpent" value="27945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -209,7 +214,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1933" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,7 +287,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update style" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Go_Reader$main.coverage" NAME="main Coverage Results" MODIFIED="1558317937114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Go_Reader$main.coverage" NAME="main Coverage Results" MODIFIED="1558323549523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
@@ -291,29 +296,29 @@
         <state relative-caret-position="-5299" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/out_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4048">
+          <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+          <folding>
+            <element signature="e#103#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2192">
+        <state relative-caret-position="138">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="30" column="67" lean-forward="true" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+        <state relative-caret-position="644">
+          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/out_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="182" lean-forward="true" selection-start-line="182" selection-end-line="182" />
-          <folding>
-            <element signature="e#103#112#0" expanded="true" />
           </folding>
         </state>
       </provider>

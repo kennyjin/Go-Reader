@@ -3,7 +3,9 @@ This module parses Leela Zero output to a csv file containing win rate and other
 """
 
 import re
-import csv
+# import csv
+import pandas as pd
+
 
 def get_text_blocks(lz_out_txt):
     blks = re.split(r"Thinking at most", lz_out_txt)
@@ -164,20 +166,23 @@ def print_data(lz_cmd_txt, lz_out_txt, out_file):
         lz_next_list.append(get_next_move(blks[i]))
         variation_list.append(get_variation(blks[i]))
 
-    # data = {"move_num": move_num_list, "color_next": color_list, "winrate_B": win_rate_list_b,
-    #         "winrate_W": win_rate_list_w, "LZ_next_move": lz_next_list, "variation": variation_list,
-    #         "actual_next_move": actual_next_list}
-
-    mapped = zip(move_num_list, color_list, win_rate_list_b, win_rate_list_w, lz_next_list,
-                 variation_list, actual_next_list)
-    mapped = list(mapped)
-
     # Write to csv file, might be better using pandas
-    with open(out_file, "w") as f:
-        writer = csv.writer(f)
-        writer.writerow(["move_num", "color_next", "winrate_B", "winrate_W", "LZ_next_move",
-                         "variation", "actual_next_move"])
-        writer.writerows(mapped)
+    data = {"move_num": move_num_list, "color_next": color_list, "winrate_B": win_rate_list_b,
+            "winrate_W": win_rate_list_w, "LZ_next_move": lz_next_list, "variation": variation_list,
+            "actual_next_move": actual_next_list}
+    df = pd.DataFrame(data)
+    df.to_csv(out_file, index=False)
+
+    # mapped = zip(move_num_list, color_list, win_rate_list_b, win_rate_list_w, lz_next_list,
+    #              variation_list, actual_next_list)
+    # mapped = list(mapped)
+    #
+    #
+    # with open(out_file, "w") as f:
+    #     writer = csv.writer(f)
+    #     writer.writerow(["move_num", "color_next", "winrate_B", "winrate_W", "LZ_next_move",
+    #                      "variation", "actual_next_move"])
+    #     writer.writerows(mapped)
 
 
 

@@ -1,0 +1,35 @@
+
+
+```{r}
+data = read.csv("alphago_leesedol_4.csv",header = T)
+head(data)
+```
+
+```{r}
+winrate = data$winrate_B
+move_num = data$move_num
+```
+
+
+```{r}
+plot(move_num, winrate, pch = 20, xlab = "Move Number", ylab = "Black Winrate", main = "AlphaGo vs Lee Sedol(W) Game 4")
+lines(move_num, winrate)
+```
+
+
+
+```{r}
+data = read.csv("alphago_kejie_3.csv",header = T)
+head(data)
+```
+
+```{r}
+winrate = data$winrate_B
+move_num = data$move_num
+```
+
+
+```{r}
+plot(move_num, winrate, pch = 20, xlab = "Move Number", ylab = "Black Winrate", main = "AlphaGo vs Ke jie(W) Game 3")
+lines(move_num, winrate)
+```
