@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b522bba1-38f2-4087-9928-6b43d36f5d5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/KennyJin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/KennyJin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stat_generater.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Go-Reader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Go-Reader.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/csv_files/alphago_kejie_3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/csv_files/alphago_kejie_3.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/out_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/out_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/statistics.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-sample/winratePlot.Rmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-sample/winratePlot.nb.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/out_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4048">
-              <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+            <state relative-caret-position="-94">
+              <caret line="283" column="24" lean-forward="true" selection-start-line="283" selection-start-column="24" selection-end-line="283" selection-end-column="24" />
               <folding>
                 <element signature="e#103#112#0" expanded="true" />
               </folding>
@@ -31,13 +31,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
+        <entry file="file://$PROJECT_DIR$/src/stat_generater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+            <state relative-caret-position="1171">
+              <caret line="163" column="53" lean-forward="true" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
               <folding>
-                <element signature="e#0#17#0" expanded="true" />
+                <element signature="e#284#303#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -45,8 +54,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="-1426">
+              <caret line="2" column="50" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +82,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>re</find>
+    </findStrings>
     <dirStrings>
       <dir>E:\Go-Reader\src</dir>
     </dirStrings>
@@ -73,28 +97,35 @@
       <list>
         <option value="$PROJECT_DIR$/src/__init__.py" />
         <option value="$PROJECT_DIR$/src/SGF_parser.py" />
-        <option value="$PROJECT_DIR$/src/out_parser.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
+        <option value="$PROJECT_DIR$/src/out_parser.py" />
+        <option value="$PROJECT_DIR$/src/stat_generater.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="520" />
-    <option name="y" value="40" />
-    <option name="width" value="2800" />
-    <option name="height" value="2000" />
+    <option name="x" value="-12" />
+    <option name="width" value="1942" />
+    <option name="height" value="2090" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
+              <item name="csv_files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
@@ -106,11 +137,15 @@
               <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
+              <item name="text-sample" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,7 +169,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.stat_generater">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Go-Reader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Go-Reader" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -157,9 +214,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stat_generater" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Go-Reader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/stat_generater.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Go-Reader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stat_generater" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +284,8 @@
       <workItem from="1558318252532" duration="1022000" />
       <workItem from="1558319605473" duration="1241000" />
       <workItem from="1558323813096" duration="429000" />
+      <workItem from="1558899696235" duration="3532000" />
+      <workItem from="1558908209556" duration="18716000" />
     </task>
     <task id="LOCAL-00001" summary="Update style">
       <created>1558279013768</created>
@@ -200,7 +305,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27945000" />
+    <option name="totallyTimeSpent" value="50193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -214,7 +319,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1933" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1936" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19786666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -229,7 +334,8 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3297062" />
+      <window_info anchor="right" x="0" y="0" width="433" height="853" id="Documentation" side_tool="true" visible="true" weight="0.16373333" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -287,7 +393,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Update style" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Go_Reader$main.coverage" NAME="main Coverage Results" MODIFIED="1558323549523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Go_Reader$test.coverage" NAME="test Coverage Results" MODIFIED="1558902389044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Go_Reader$main.coverage" NAME="main Coverage Results" MODIFIED="1558902643141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Go_Reader$stat_generater.coverage" NAME="stat_generater Coverage Results" MODIFIED="1558928118106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
@@ -298,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/out_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4048">
-          <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
+        <state relative-caret-position="-94">
+          <caret line="283" column="24" lean-forward="true" selection-start-line="283" selection-start-column="24" selection-end-line="283" selection-end-column="24" />
           <folding>
             <element signature="e#103#112#0" expanded="true" />
           </folding>
@@ -308,17 +416,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1426">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="70" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="35">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stat_generater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1171">
+          <caret line="163" column="53" lean-forward="true" selection-start-line="163" selection-start-column="53" selection-end-line="163" selection-end-column="53" />
+          <folding>
+            <element signature="e#284#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
