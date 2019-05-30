@@ -8,6 +8,7 @@ Matching rate. (Exactly match or match one of the options)
 
 import pandas as pd
 import numpy as np
+# import matplotlib.pyplot as plt
 
 
 """
@@ -82,6 +83,7 @@ def get_white_diff(df):
 
 """
 Returns the matched (exactly) list (with Leela Zero) of each player
+List will look like: [1,1,0,0,1,1,1,...]
 1 means this move matches Leela Zero next move, 0 otherwise
 """
 
@@ -94,6 +96,7 @@ def get_matched_list_exact(df):
 
 """
 Returns the matched list (with Leela Zero) of each player
+List will look like: [1,1,0,0,1,1,1,...]
 1 means this move matches Leela Zero next move, 0 otherwise
 """
 
@@ -125,40 +128,90 @@ def get_matching_rate(df, color, range_low, range_high, exact_match=False):
             total_move_num += 1
             matched_move_num += matched.iloc[i]
     return float(matched_move_num) / float(total_move_num)
-    #return float(total_move_num)
 
 
+"""
+Return a data frame containing the worst moves of a player
+"""
 
 
+def get_worst_moves(df, color, num_to_display):
+    if color == "B":
+        df_color = get_black_diff(df)
+    else:
+        df_color = get_white_diff(df)
+    return df_color.nsmallest(num_to_display, "winrate_diff")
 
 
+"""
+Return a data frame containing the best moves of a player
+"""
 
 
-dtf = pd.read_csv("../csv_files/alphago_kejie_3.csv")
+def get_best_moves(df, color, num_to_display):
+    if color == "B":
+        df_color = get_black_diff(df)
+    else:
+        df_color = get_white_diff(df)
+    return df_color.nlargest(num_to_display, "winrate_diff")
 
-#print(get_white_diff(df)["move_num"])
-#print(get_black_diff(df))
 
-df_black = get_black_diff(dtf)
-df_white = get_white_diff(dtf)
+"""
+Return mean and variance of winrate difference
+"""
 
-# print(df_black.loc[:, "winrate_diff"].mean())
-# print(df_black.loc[:, "winrate_diff"].var())
-# print(df_white.loc[:, "winrate_diff"].mean())
-# print(df_white.loc[:, "winrate_diff"].var())
+
+def get_basic_diff_stats(df, color):
+    if color == "B":
+        df_color = get_black_diff(df)
+    else:
+        df_color = get_white_diff(df)
+    return df_color['winrate_diff'].mean(), df_color['winrate_diff'].var()
+
+
+"""
+Write additional stats to a file
+"""
+
+
+def write_stats(dtf, out_stat_file, show_best_moves=False, num_worst_moves=5, range_low=1, range_high=0):
+    if range_high == 0:
+        range_high = len(dtf)
+    out_str = ""
+    mean_b, var_b = get_basic_diff_stats(dtf, "B")
+    out_str += "Winrate difference mean of black: " + "{0:.2f}".format(mean_b) + "\n"
+    out_str += "Winrate difference variance of black: " + "{0:.2f}".format(var_b) + "\n"
+
+    mean_w, var_w = get_basic_diff_stats(dtf, "W")
+    out_str += "Winrate difference mean of white: " + "{0:.2f}".format(mean_w) + "\n"
+    out_str += "Winrate difference variance of white: " + "{0:.2f}".format(var_w) + "\n"
+
+    out_str += "Black worst moves:\n" + str(get_worst_moves(dtf, "B", num_worst_moves)) + "\n"
+    out_str += "White worst moves:\n" + str(get_worst_moves(dtf, "W", num_worst_moves)) + "\n"
+
+    if show_best_moves:
+        out_str += "Black best moves:\n" + str(get_best_moves(dtf, "B", num_worst_moves)) + "\n"
+        out_str += "White best moves:\n" + str(get_best_moves(dtf, "W", num_worst_moves)) + "\n"
+
+    out_str += "Black (almost) matching rate:\n" + "{0:.2f}".format(
+        get_matching_rate(df=dtf, color="B", range_low=range_low, range_high=range_high)) + "\n"
+    out_str += "White (almost) matching rate:\n" + "{0:.2f}".format(
+        get_matching_rate(df=dtf, color="W", range_low=range_low, range_high=range_high)) + "\n"
+
+    out_str += "Black (exactly) matching rate:\n" + "{0:.2f}".format(
+        get_matching_rate(df=dtf, color="B", range_low=range_low, range_high=range_high, exact_match=True)) + "\n"
+    out_str += "White (exactly) matching rate:\n" + "{0:.2f}".format(
+        get_matching_rate(df=dtf, color="W", range_low=range_low, range_high=range_high, exact_match=True)) + "\n"
+    f = open(out_stat_file, 'w')
+    f.write(out_str)
+
+
+# plt.hist(get_black_diff(df)['winrate_diff'].to_numpy(), bins=20)
+# plt.show()
 #
-# print(df_black.nsmallest(5, "winrate_diff"))
-# print(df_white.nsmallest(5, "winrate_diff"))
+# plt.hist(get_white_diff(df)['winrate_diff'].to_numpy(), bins=20)
+# plt.show()
 
-#print(get_matching_rate_exact(df))
-#print(get_matched_list(df))
 
-#print(type(df['LZ_all_next_moves'][0]))
 
-#print(type(df['actual_next_move'][0]))
 
-print(get_matching_rate(df=dtf, color="B", range_low=1, range_high=209))
-print(get_matching_rate(df=dtf, color="W", range_low=1, range_high=209))
-
-print(get_matching_rate(df=dtf, color="B", range_low=1, range_high=209, exact_match=True))
-print(get_matching_rate(df=dtf, color="W", range_low=1, range_high=209, exact_match=True))

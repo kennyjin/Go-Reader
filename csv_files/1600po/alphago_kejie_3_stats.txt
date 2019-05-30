@@ -1,0 +1,40 @@
+Winrate difference mean of black: -0.72
+Winrate difference variance of black: 0.78
+Winrate difference mean of white: -1.26
+Winrate difference variance of white: 3.64
+Black worst moves:
+    move_num  winrate_diff
+13        27         -5.25
+10        21         -4.23
+21        43         -3.72
+44        89         -2.60
+91       183         -2.36
+White worst moves:
+    move_num  winrate_diff
+19        40        -11.30
+14        30         -9.49
+20        42         -8.33
+21        44         -6.85
+9         20         -5.46
+Black best moves:
+     move_num  winrate_diff
+15         31          1.40
+102       205          0.32
+87        175          0.12
+103       207          0.12
+4           9          0.11
+White best moves:
+    move_num  winrate_diff
+27        56          0.09
+26        54          0.07
+61       124          0.04
+73       148         -0.00
+69       140         -0.02
+Black (almost) matching rate:
+0.93
+White (almost) matching rate:
+0.88
+Black (exactly) matching rate:
+0.62
+White (exactly) matching rate:
+0.49
