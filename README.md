@@ -41,10 +41,17 @@ Example graphs:
 
 Maybe a txt file will suffice.
 
+**Problem**: How to deal with the black/white square (indicating the next move) from Fox Go Server?
+
+**Problem**: How to deal with the triangle/circle indicating the current move?
+
 We can further generate a new SGF file containing information about **winning rates**, **bad moves** and **LeelaZero recommended moves** for actual moves that are not matched with LeelaZero. Winning rate, bad moves could be put into the **comment** of SGF, while LeelaZero recommended moves could be added as **new branches**.
 
 ## Next Steps
 
-- [ ] Take an SGF file to generate winning rate for each move, put into a file.
-- [ ] Implement data analysis mechanisms, put new stats into a file.
+- [ ] Generate winrate plots. (using matplotlib or plotly)
+- [ ] Modify the definition of matching. (e.g. first 2 moves)
+- [ ] Generate bar plot & scatter plot for winrate difference mean and variance.
+- [ ] Generate bar plot for matching rate. (for different stages of a game)
+- [ ] Display worst moves (and best moves), connect with the winrate plot.
 - [ ] Transform **screenshots** of the Go board into SGF files.

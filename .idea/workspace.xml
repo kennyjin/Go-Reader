@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b522bba1-38f2-4087-9928-6b43d36f5d5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sgf-files/alphago_leesedol_1_main.sgf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sgf-files/alphago_leesedol_2_main.sgf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sgf-files/alphago_leesedol_3_main.sgf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sgf-files/alphago_leesedol_5_main.sgf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csv_files/alphago_leesedol_4_1600po.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stat_generater.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/stat_generater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/winrate.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +14,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/image_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="641">
+              <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/out_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
+            <state relative-caret-position="-739">
+              <caret line="260" column="36" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
               <folding>
                 <element signature="e#103#112#0" expanded="true" />
               </folding>
@@ -35,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/stat_generater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2231">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="-4088">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
               <folding>
                 <element signature="e#284#303#0" expanded="true" />
               </folding>
@@ -47,20 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="120" column="35" lean-forward="true" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2760">
+              <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -94,11 +100,12 @@
         <option value="$PROJECT_DIR$/src/out_parser.py" />
         <option value="$PROJECT_DIR$/src/stat_generater.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/image_parser.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+    <option name="x" value="1916" />
     <option name="width" value="1942" />
     <option name="height" value="2090" />
   </component>
@@ -107,6 +114,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,23 +130,12 @@
             <path>
               <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
               <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
-              <item name="sgf-files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Go-Reader" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Go-Reader" type="462c0819:PsiDirectoryNode" />
-              <item name="text-sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.image_parser">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Go-Reader" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -177,6 +174,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="image_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Go-Reader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/image_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,6 +269,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.image_parser" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.stat_generater" />
         <item itemvalue="Python.test" />
@@ -281,6 +298,15 @@
       <workItem from="1558908209556" duration="18716000" />
       <workItem from="1558933075161" duration="5857000" />
       <workItem from="1558969585472" duration="10445000" />
+      <workItem from="1559327195907" duration="55000" />
+      <workItem from="1559327325857" duration="899000" />
+      <workItem from="1559440498846" duration="665000" />
+      <workItem from="1559441829078" duration="806000" />
+      <workItem from="1559448517775" duration="3383000" />
+      <workItem from="1559452136698" duration="589000" />
+      <workItem from="1559452898271" duration="635000" />
+      <workItem from="1559665545437" duration="5880000" />
+      <workItem from="1559699386942" duration="9595000" />
     </task>
     <task id="LOCAL-00001" summary="Update style">
       <created>1558279013768</created>
@@ -300,7 +326,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66495000" />
+    <option name="totallyTimeSpent" value="89002000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -314,7 +340,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1933" height="1053" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20213333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2210975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -329,15 +355,15 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3297062" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3297062" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32900432" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="SciView" order="3" sideWeight="0.49838188" weight="0.3296" />
+      <window_info anchor="right" content_ui="combo" id="SciView" order="3" sideWeight="0.49838188" weight="0.32924882" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" x="0" y="0" width="433" height="853" id="Documentation" order="7" sideWeight="0.50161815" side_tool="true" weight="0.3296" />
+      <window_info anchor="right" x="0" y="0" width="433" height="853" id="Documentation" order="7" sideWeight="0.50161815" side_tool="true" weight="0.32924882" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,11 +420,7 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/src/winrate.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5299" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/winrate.txt" />
     <entry file="file://$PROJECT_DIR$/src/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -406,39 +428,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/out_parser.py">
+    <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-          <folding>
-            <element signature="e#103#112#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2760">
+          <caret line="120" column="35" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stat_generater.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2231">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="-4088">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
           <folding>
             <element signature="e#284#303#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SGF_parser.py">
+    <entry file="file://$PROJECT_DIR$/src/out_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="120" column="35" lean-forward="true" selection-start-line="120" selection-start-column="35" selection-end-line="120" selection-end-column="35" />
+        <state relative-caret-position="-739">
+          <caret line="260" column="36" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
+          <folding>
+            <element signature="e#103#112#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="276">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/image_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="641">
+          <caret line="70" column="34" lean-forward="true" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
