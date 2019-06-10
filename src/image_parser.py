@@ -8,14 +8,16 @@ Get the color of the stone on the specific square.
 Could be black stone, white stone or no stone.
 TODO This function definitely needs further improvements.
 1 means black, -1 means white, 0 means no stone.
+These thresholds are set for fox Go server.
 """
 
 
-def get_stone_color(square):
+def get_stone_color(square, black_thresh=90, white_thresh=190):
     mean_color = np.mean(square)
-    if mean_color >= 200:
+    # print(mean_color)
+    if mean_color >= white_thresh:
         return -1
-    if mean_color <= 90:
+    if mean_color <= black_thresh:
         return 1
     return 0
 
@@ -46,8 +48,9 @@ Get Go board from an image.
 """
 
 
-def get_go_board(game_image):
-    return None
+def get_go_board(game_image, edge_top, edge_left, board_len_x, board_len_y):
+
+    return game_image[edge_top:edge_top+board_len_y, edge_left:edge_left+board_len_x]
 
 
 
@@ -98,6 +101,15 @@ def img_to_sgf(game_image, sgf_file):
 
 
 """
+Get the color and the position of the current move
+"""
+
+
+def current_move_info(game_image):
+    return None
+
+
+"""
 Show RGB histogram of an image.
 """
 
@@ -111,41 +123,33 @@ def plot_histogram(square):
     plt.show()
 
 
-img = cv2.imread('../images/13.PNG')
-
-
-# mean_color_list = np.array([])
+# get sgf for image 13
+# img = cv2.imread('../images/13.PNG')
 #
-# for i in range(19):
-#     for j in range(19):
-#         # ret, piece = cv2.threshold(img[79 * i:79 * (i + 1), 79 * j:79 * (j + 1)], 75, 255, cv2.THRESH_BINARY)
-#         # cv2.imshow('image', piece)
-#         piece = img[49 + 94 * i:49 + 94 * (i + 1), 49 + 94 * j:49 + 94 * (j + 1)]
-#         # print(img[49 + 94 * i:49 + 94 * (i + 1), 49 + 94 * j:49 + 94 * (j + 1)].shape)
-#         # cv2.imshow('image', img[49 + 94 * j:49 + 94 * (j + 1), 49 + 94 * i:49 + 94 * (i + 1)])
-#         # print(img[79 * i:79 * (i + 1), 79 * j:79 * (j + 1)])
-#         # print(np.mean(piece))
-#         print(str(get_stone_color(piece)))
-#         # mean_color_list = np.append(mean_color_list, [np.mean(piece)])
-#         # print(img[79 * i:79 * (i + 1), 79 * j:79 * (j + 1)].var())
-#         cv2.imshow('image', piece)
-#         cv2.waitKey(0)
-#         cv2.destroyAllWindows()
-# print(mean_color_list)
-# plt.hist(mean_color_list, bins=50)
-# plt.show()
+#
+# game_position = get_game_position(img, 49, 49, 94)
+#
+#
+# f = open("out1.sgf", "w")
+# f.write(get_sgf_txt(game_position))
+# f.close()
 
 
-game_position = get_game_position(img, 49, 49, 94)
+# Get sgf for fox Go server images
+# Still cannot identify current move yet
+# Still cannot identify the black/white squares from the mouse
+# img = cv2.imread('../images/12.PNG')
+img = cv2.imread('E:/Go-game-record/Fox_Go_Server/images/2019-06-10 (3).png')
+# print(np.shape(img))
+board_img = get_go_board(img, 68, 531, 1865, 1865)
+# cv2.imshow('image', board_img)
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
+game_position = get_game_position(board_img, 3, 3, 98)
 
-
-f = open("out1.sgf", "w")
+# f = open("out3.sgf", "w")
+f = open("E:/Go-game-record/Fox_Go_Server/2019-06-10 (3).sgf", "w")
 f.write(get_sgf_txt(game_position))
 f.close()
-
-
-
-
-
 
 
