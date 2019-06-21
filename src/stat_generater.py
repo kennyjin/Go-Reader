@@ -98,6 +98,7 @@ def get_matched_list_exact(df):
 Returns the matched list (with Leela Zero) of each player
 List will look like: [1,1,0,0,1,1,1,...]
 1 means this move matches Leela Zero next move, 0 otherwise
+TODO specify number moves being considered matched with Leela Zero. 
 """
 
 
