@@ -55,3 +55,4 @@ We can further generate a new SGF file containing information about **winning ra
 - [ ] Generate bar plot for matching rate. (for different stages of a game)
 - [ ] Display worst moves (and best moves), connect with the winrate plot.
 - [ ] Transform **screenshots** of the Go board into SGF files.
+- [ ] Need to figure out a way to read lz-analyze outputs. (Now we can only read lz-genmove_analyze)
