@@ -6,21 +6,10 @@ This is a program that could analyze Go games. LeelaZero engine will be used to 
 
 ## **Basic Features**
 
-This program has 2 basic functionalities:
+This program has 1 basic functionality:
 
-1. Go board image processing.
-2. SGF file analysis.
+1. SGF file analysis.
 
-### Go board image processing
-
-This part transforms an image of a Go board to an SGF game record file.
-
-There are 2 types of Go board images to consider:
-
-* A screenshot of Go board from applications.
-* A photo of a Go board from the real world.
-
-It might be easy to identify all the positions of stones in a screenshot, but identifying stone positions from a real world Go board could be harder, as the stones could be improperly placed.
 
 ### SGF file analysis
 
@@ -41,9 +30,7 @@ Example graphs:
 
 Maybe a txt file will suffice.
 
-**Problem**: How to deal with the black/white square (indicating the next move) from Fox Go Server?
 
-**Problem**: How to deal with the triangle/circle indicating the current move?
 
 We can further generate a new SGF file containing information about **winning rates**, **bad moves** and **LeelaZero recommended moves** for actual moves that are not matched with LeelaZero. Winning rate, bad moves could be put into the **comment** of SGF, while LeelaZero recommended moves could be added as **new branches**.
 
@@ -54,5 +41,4 @@ We can further generate a new SGF file containing information about **winning ra
 - [ ] Generate bar plot & scatter plot for winrate difference mean and variance.
 - [ ] Generate bar plot for matching rate. (for different stages of a game)
 - [ ] Display worst moves (and best moves), connect with the winrate plot.
-- [ ] Transform **screenshots** of the Go board into SGF files.
 - [ ] Need to figure out a way to read lz-analyze outputs. (Now we can only read lz-genmove_analyze)
